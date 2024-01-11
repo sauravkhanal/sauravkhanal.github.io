@@ -1,5 +1,5 @@
 // import userImage from '../assets/mee.jpg'
-import resume from '../assets/Saurav_Khanal_cv.pdf'
+import resume from '../assets/CV_Saurav_Khanal.pdf'
 
 export default function Hero() {
 
