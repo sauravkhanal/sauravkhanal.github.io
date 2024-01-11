@@ -54,7 +54,7 @@ export default function Projects() {
             description: "Done as minor project, compares similarity of two signatures.",
             imageURL: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmtIosrgub4PJen51LNRNJLdwZtqZZAvcTsZc3iB4PLiT3JIxqbvC3X17qYOOW4bBBCg&usqp=CAU',
             // demoURL: "https://github.com/sauravkhanal/Application",
-            sourceURL: "https://github.com/sauravkhanal/Application",
+            sourceURL: "https://github.com/sauravkhanal/SignatureVerificationApp",
             tools: 'python, tensorflow, tkinter',
             status: 'completed',
         }

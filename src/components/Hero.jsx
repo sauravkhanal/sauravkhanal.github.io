@@ -6,7 +6,7 @@ export default function Hero() {
     return (
         <section className="flex flex-col grow">
         {/* <div></div> */}
-        <div className=' grow flex flex-col justify-center items-center md:flex-row p-5'>
+        <div className=' grow flex flex-col justify-center items-center sm:flex-row p-5'>
             <img
                 className='w-44 h-44 rounded-full mb-5 object-cover'
                 src="https://img.freepik.com/premium-vector/children-portrait-cartoon-vector-illustration_723224-2901.jpg?w=740" alt="profile image"

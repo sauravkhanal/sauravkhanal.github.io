@@ -1,12 +1,10 @@
+import { navigationItems } from "./data"
+
 const Header = () => {
+
     return (
-        <nav className="flex flex-row  justify-around sm:px-4 py-4 sm:justify-center font-medium text-lg">
-            {[
-                ['Home', '#'],
-                ['About', '#'],
-                ['Projects', '#projects'],
-                // ['Contact', '/contact']
-            ].map(
+        <nav className=" hidden sm:flex flex-row justify-around sm:px-4 py-4 sm:justify-center font-medium text-lg">
+            {navigationItems.map(
                 ([title, url], index) => {
                     return <a
                         key={index}
