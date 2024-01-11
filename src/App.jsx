@@ -8,12 +8,12 @@ function App() {
   return (
     <div className="font-poppins bg-light text-dark" >
 
-      <section className=" flex flex-col min-h-screen sec">
+      <section className=" flex flex-col min-h-svh sec">
         <Header />
         <Hero />
       </section>
 
-      <section className="sec">
+      <section className="sec min-h-svh">
         <Projects />
       </section>
     </div>
