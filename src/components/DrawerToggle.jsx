@@ -12,30 +12,32 @@ function DrawerToggle() {
         <>
             <button
                 onClick={toggleDrawer}
-                className='block sm:hidden text-left p-5 fixed text-3xl'
+                className='block sm:hidden text-left p-5 fixed text-2xl'
             >
                 <i className='fa-solid fa-bars'></i>
             </button>
             <Drawer
-                className=''
+                className='flex'
                 open={isDrawerOpen}
                 onClose={toggleDrawer}
                 direction='left'
                 lockBackgroundScroll='true'
             >
-                {navigationItems.map(
-                    ([title, url], index) => {
-                        return <a
-                            key={index}
-                            onClick={toggleDrawer}
-                            href={url}
-                            className="block mx-8 hover:text-action hover:underline p-1"
-                        >
-                            {title}
-                        </a>
+                <div className='flex flex-col grow justify-center ml-8 space-y-2 align-middle text-lg' >
+                    {navigationItems.map(
+                        ([title, url], index) => {
+                            return <a
+                                key={index}
+                                onClick={toggleDrawer}
+                                href={url}
+                                className="hover:text-action hover:underline p-1"
+                            >
+                                {title}
+                            </a>
+                        }
+                    )
                     }
-                )
-                }
+                </div>
 
             </Drawer>
         </>
