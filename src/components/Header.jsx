@@ -1,6 +1,6 @@
 const Header = () => {
     return (
-        <nav className="flex flex-row p-4 justify-center font-medium text-lg">
+        <nav className="flex flex-row  justify-around sm:px-4 py-4 sm:justify-center font-medium text-lg">
             {[
                 ['Home', '#'],
                 ['About', '#'],
