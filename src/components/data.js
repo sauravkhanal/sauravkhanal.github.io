@@ -7,6 +7,15 @@ export const navigationItems = [
 
 export const projects = [
     {
+        name:'Travel Guide',
+        description: 'Application that assists travelers to discover heritage sites of Nepal',
+        imageURL: 'https://download.khanalsaurav.com.np/travelguide/images/detection_square.jpg',
+        demoURL:'',
+        sourceURL: 'https://github.com/Suprim-Shakya/TravelApp',
+        tools: 'React Native',
+        status: 'ongoing'
+    },
+    {
         name: "Heritage Detector",
         description: "Detects heritage site within Kathmandu Durbar Square using YOLO V8.",
         imageURL: "https://khanalsaurav.com.np/YOLO-inference-webapp/static/media/b.b24aeaf94467f360da6b.jpg",
