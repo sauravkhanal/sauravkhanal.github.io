@@ -8,7 +8,7 @@ export const navigationItems = [
 export const projects = [
     {
         name:'Travel Guide',
-        description: 'Application that assists travelers to discover heritage sites of Nepal',
+        description: 'Mobile Application that assists travelers to discover heritage sites of Nepal',
         imageURL: 'https://download.khanalsaurav.com.np/travelguide/images/detection_square.jpg',
         demoURL:'',
         sourceURL: 'https://github.com/Suprim-Shakya/TravelApp',
@@ -16,8 +16,17 @@ export const projects = [
         status: 'ongoing'
     },
     {
+        name: "Json API",
+        description: "Host JSON data for free.",
+        imageURL: "https://raw.githubusercontent.com/sauravkhanal/JSONAPI/main/examplesample.png",
+        demoURL: "https://json.gorkhacloud.com",
+        sourceURL: "https://github.com/sauravkhanal/JSONAPI",
+        tools: "React, Tailwind, .NET",
+        status: 'ongoing'
+    },
+    {
         name: "Heritage Detector",
-        description: "Detects heritage site within Kathmandu Durbar Square using YOLO V8.",
+        description: "Website Detects heritage site within Kathmandu Durbar Square using YOLO V8.",
         imageURL: "https://khanalsaurav.com.np/YOLO-inference-webapp/static/media/b.b24aeaf94467f360da6b.jpg",
         demoURL: "https://khanalsaurav.com.np/YOLO-inference-webapp",
         sourceURL: "https://github.com/sauravkhanal/YOLO-inference-webapp",
@@ -26,7 +35,7 @@ export const projects = [
     },
     {
         name: "License Master",
-        description: " Helps Engineering Graduate to prepare for Engineering License Exam (login/register completed)",
+        description: " Webapp Helps Engineering Graduate to prepare for Engineering License Exam (login/register completed)",
         imageURL: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQN85gNLk8X6uQbrw5tP5SPRreKBvHXga8-tg&usqp=CAU",
         demoURL: "https://khanalsaurav.com.np/LicenseMaster/",
         sourceURL: "https://github.com/sauravkhanal/LicenseMaster",
