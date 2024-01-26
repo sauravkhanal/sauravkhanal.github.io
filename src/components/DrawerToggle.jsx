@@ -23,7 +23,7 @@ function DrawerToggle() {
                 direction='left'
                 lockBackgroundScroll='true'
             >
-                <div className='flex flex-col grow justify-center ml-8 space-y-2 align-middle text-lg' >
+                <div className='flex flex-col grow justify-center pl-8 space-y-2 align-middle text-lg bg-light' >
                     {navigationItems.map(
                         ([title, url], index) => {
                             return <a

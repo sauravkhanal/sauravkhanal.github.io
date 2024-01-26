@@ -1,8 +1,8 @@
 export const navigationItems = [
     ['Home', '#'],
-    ['About', '#'],
+    ['About', '#about'],
     ['Projects', '#projects'],
-    ['Contact', '#']
+    // ['Contact', '#']
 ]
 
 export const projects = [
