@@ -1,8 +1,25 @@
 import profileImage from '../assets/mee.jpg'
 import resume from '../assets/CV_Saurav_Khanal.pdf'
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import { useState, useEffect } from 'react';
 
 export default function Hero() {
+    const [pulse, setPulse] = useState(false);
+
+    useEffect(() => {
+        const intervalId = setInterval(() => {
+            setPulse(true);
+
+            //remove animation after 2s
+            setTimeout(() => {
+                setPulse(false);
+            }, 2000); // animation duration
+
+        }, 5000); // cycle duration
+
+        // Cleanup the interval on component unmount
+        return () => clearInterval(intervalId);
+    }, []);
 
     return (
         <section className="flex flex-col grow">
@@ -23,7 +40,7 @@ export default function Hero() {
                     </div>
                 </div>
             </div>
-            <button className="self-center px-3 py-2 mb-8 bg-dark text-light rounded-md hover:bg-slate-600 hover:scale-105 active:scale-95 transition"><a href={resume} target='_blank'>Resume</a></button>
+            <button className={`self-center px-3 py-2 mb-8 bg-dark text-light rounded-md hover:bg-slate-600 hover:scale-105 active:scale-95 transition ${pulse && 'animate-spin'}`}><a href={resume} target='_blank'>Resume</a></button>
         </section>
 
     )
