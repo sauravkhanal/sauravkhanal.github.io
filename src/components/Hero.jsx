@@ -1,5 +1,6 @@
 // import userImage from '../assets/mee.jpg'
 import resume from '../assets/CV_Saurav_Khanal.pdf'
+import { FaGithub, FaLinkedin,FaEnvelope } from "react-icons/fa";
 
 export default function Hero() {
 
@@ -12,13 +13,14 @@ export default function Hero() {
                 src="https://img.freepik.com/premium-vector/children-portrait-cartoon-vector-illustration_723224-2901.jpg?w=740" alt="profile image"
                 draggable={false}
                 />
-            <div className='font-semibold text-lg pl-5 align-text'>
+            <div className='font-semibold text-lg pl-5 align-text cursor-default'>
                 <p className='text-base'>Hello there!</p>
                 <p className='text-2xl'>I'm <span className='font-bold text-action'>Saurav</span></p>
                 <p className=''>A Computer Engineering Student</p>
-                <div>
-                    <a href="https://www.github.com/sauravkhanal" target='_blank'><i className="fa-brands fa-github  fa-xl hover:text-slate-600"></i></a>
-                    <a href="https://www.linkedin.com/in/khanalsaurav" target='_blank'><i className="fa-brands fa-linkedin mx-2 fa-xl hover:text-slate-600"></i></a>
+                <div className='flex gap-2 pt-1'>
+                    <a href="https://www.github.com/sauravkhanal" target='_blank' className='hover:text-slate-600 text-2xl' title='Github'><FaGithub /></a>
+                    <a href="https://www.linkedin.com/in/khanalsaurav" target='_blank' className='hover:text-slate-600 text-2xl' title='Linkedin'><FaLinkedin /></a>
+                    <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=sauravkhanal635@gmail.com" target='_blank' className='hover:text-slate-600 text-2xl' title='mail' ><FaEnvelope /></a>
                 </div>
             </div>
         </div>
