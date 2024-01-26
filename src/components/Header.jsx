@@ -9,7 +9,7 @@ const Header = () => {
                     return <a
                         key={index}
                         href={url}
-                        className="block mx-8 hover:text-action hover:underline p-1"
+                        className="block mx-8 hover:text-action hover:scale-110 transition p-1"
                     >
                         {title}
                     </a>
