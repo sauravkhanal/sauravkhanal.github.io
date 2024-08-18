@@ -19,7 +19,7 @@ export const projects = [
         name: 'Json API',
         description: 'Website that hosts JSON data for free.',
         imageURL: 'https://raw.githubusercontent.com/sauravkhanal/JSONAPI/main/examplesample.png',
-        demoURL: 'https://json.gorkhacloud.com',
+        demoURL: 'https://khanalsaurav.com.np/JSONAPI/',
         sourceURL: 'https://github.com/sauravkhanal/JSONAPI',
         tools: 'React, Tailwind, .NET',
         status: 'ongoing'
