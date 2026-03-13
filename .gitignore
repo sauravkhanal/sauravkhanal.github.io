@@ -1,1 +1,15 @@
-node_modules
+# Dependencies (never commit these)
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp / debug files
+*.txt
+err.*
+out.*
+
+# NOTE: output.css and index.html ARE committed intentionally.
+# GitHub Pages serves them directly as static files.
+# Run `npm run build` locally before pushing.
