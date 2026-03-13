@@ -1,8 +1,0 @@
-html {
-  scroll-snap-type: y mandatory;
-  scroll-behavior: smooth;
-}
-
-.sec {
-  scroll-snap-align:start;
-}
