@@ -3,9 +3,10 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-sans: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-100: oklch(93.6% 0.032 17.717);
     --color-orange-100: oklch(95.4% 0.038 75.164);
     --color-orange-200: oklch(90.1% 0.076 70.697);
     --color-orange-300: oklch(83.7% 0.128 66.29);
@@ -67,6 +68,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-5xl: 3rem;
+    --text-5xl--line-height: 1;
     --text-6xl: 3.75rem;
     --text-6xl--line-height: 1;
     --text-7xl: 4.5rem;
@@ -422,6 +425,12 @@
   .h-full {
     height: 100%;
   }
+  .max-h-\[90vh\] {
+    max-height: 90vh;
+  }
+  .min-h-\[calc\(100vh-120px\)\] {
+    min-height: calc(100vh - 120px);
+  }
   .w-2 {
     width: calc(var(--spacing) * 2);
   }
@@ -614,15 +623,18 @@
       margin-block-end: calc(calc(var(--spacing) * 12) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
-  .space-y-24 {
+  .space-y-20 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 24) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 24) * calc(1 - var(--tw-space-y-reverse)));
+      margin-block-start: calc(calc(var(--spacing) * 20) * var(--tw-space-y-reverse));
+      margin-block-end: calc(calc(var(--spacing) * 20) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
   .overflow-hidden {
     overflow: hidden;
+  }
+  .overflow-y-auto {
+    overflow-y: auto;
   }
   .scroll-smooth {
     scroll-behavior: smooth;
@@ -731,6 +743,9 @@
   .bg-purple-300 {
     background-color: var(--color-purple-300);
   }
+  .bg-red-100 {
+    background-color: var(--color-red-100);
+  }
   .bg-rose-300 {
     background-color: var(--color-rose-300);
   }
@@ -838,6 +853,10 @@
   .text-4xl {
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
+  }
+  .text-5xl {
+    font-size: var(--text-5xl);
+    line-height: var(--tw-leading, var(--text-5xl--line-height));
   }
   .text-6xl {
     font-size: var(--text-6xl);
@@ -960,6 +979,9 @@
   }
   .decoration-yellow-400 {
     text-decoration-color: var(--color-yellow-400);
+  }
+  .decoration-wavy {
+    text-decoration-style: wavy;
   }
   .decoration-2 {
     text-decoration-thickness: 2px;
@@ -1408,9 +1430,19 @@
       gap: calc(var(--spacing) * 6);
     }
   }
+  .sm\:gap-8 {
+    @media (width >= 40rem) {
+      gap: calc(var(--spacing) * 8);
+    }
+  }
   .sm\:p-6 {
     @media (width >= 40rem) {
       padding: calc(var(--spacing) * 6);
+    }
+  }
+  .sm\:p-8 {
+    @media (width >= 40rem) {
+      padding: calc(var(--spacing) * 8);
     }
   }
   .sm\:px-0 {
@@ -1473,11 +1505,6 @@
       order: 1;
     }
   }
-  .md\:mt-20 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 20);
-    }
-  }
   .md\:flex {
     @media (width >= 48rem) {
       display: flex;
@@ -1533,12 +1560,12 @@
       gap: calc(var(--spacing) * 10);
     }
   }
-  .md\:space-y-40 {
+  .md\:space-y-32 {
     @media (width >= 48rem) {
       :where(& > :not(:last-child)) {
         --tw-space-y-reverse: 0;
-        margin-block-start: calc(calc(var(--spacing) * 40) * var(--tw-space-y-reverse));
-        margin-block-end: calc(calc(var(--spacing) * 40) * calc(1 - var(--tw-space-y-reverse)));
+        margin-block-start: calc(calc(var(--spacing) * 32) * var(--tw-space-y-reverse));
+        margin-block-end: calc(calc(var(--spacing) * 32) * calc(1 - var(--tw-space-y-reverse)));
       }
     }
   }
@@ -1598,6 +1625,11 @@
   .md\:py-5 {
     @media (width >= 48rem) {
       padding-block: calc(var(--spacing) * 5);
+    }
+  }
+  .md\:pt-10 {
+    @media (width >= 48rem) {
+      padding-top: calc(var(--spacing) * 10);
     }
   }
   .md\:text-2xl {
@@ -1710,6 +1742,11 @@
       margin-inline: calc(var(--spacing) * 0);
     }
   }
+  .lg\:my-4 {
+    @media (width >= 64rem) {
+      margin-block: calc(var(--spacing) * 4);
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
@@ -1735,6 +1772,11 @@
       align-items: flex-start;
     }
   }
+  .lg\:justify-between {
+    @media (width >= 64rem) {
+      justify-content: space-between;
+    }
+  }
   .lg\:justify-start {
     @media (width >= 64rem) {
       justify-content: flex-start;
@@ -1743,6 +1785,11 @@
   .lg\:gap-16 {
     @media (width >= 64rem) {
       gap: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:px-4 {
+    @media (width >= 64rem) {
+      padding-inline: calc(var(--spacing) * 4);
     }
   }
   .lg\:text-left {
@@ -1756,26 +1803,25 @@
       line-height: var(--tw-leading, var(--text-8xl--line-height));
     }
   }
-  .xl\:text-9xl {
+  .xl\:text-\[7rem\] {
     @media (width >= 80rem) {
-      font-size: var(--text-9xl);
-      line-height: var(--tw-leading, var(--text-9xl--line-height));
+      font-size: 7rem;
     }
   }
 }
 body {
-  background-color: #F8F7F4;
+  background-color: #f8f7f4;
   color: #000000;
   background-image: radial-gradient(#d1d1d1 1px, transparent 1px);
   background-size: 32px 32px;
   overflow-x: hidden;
 }
 h1, h2, h3, h4, nav a, button, .font-black, .font-bold.uppercase, .neo-heading {
-  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
+  font-family: "Archivo Black", "Plus Jakarta Sans", "Arial Black", sans-serif !important;
   letter-spacing: -0.02em;
 }
 p, li, span:not(.uppercase) {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 @layer utilities {
@@ -1783,35 +1829,35 @@ p, li, span:not(.uppercase) {
     border: 3px solid #000000;
   }
   .neo-shadow {
-    box-shadow: 6px 6px 0px 0px rgba(0,0,0,1);
+    box-shadow: 6px 6px 0px 0px rgba(0, 0, 0, 1);
   }
   .neo-shadow-sm {
-    box-shadow: 4px 4px 0px 0px rgba(0,0,0,1);
+    box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 1);
   }
   .neo-shadow-lg {
-    box-shadow: 10px 10px 0px 0px rgba(0,0,0,1);
+    box-shadow: 10px 10px 0px 0px rgba(0, 0, 0, 1);
   }
   .neo-hover {
-    transition: transform 0.1s ease-out, box-shadow 0.1s ease-out;
+    transition: transform 0.1s ease-out,	box-shadow 0.1s ease-out;
   }
   .neo-hover:hover {
     transform: translate(-3px, -3px);
-    box-shadow: 9px 9px 0px 0px rgba(0,0,0,1);
+    box-shadow: 9px 9px 0px 0px rgba(0, 0, 0, 1);
   }
   .neo-active:active {
     transform: translate(6px, 6px);
-    box-shadow: 0px 0px 0px 0px rgba(0,0,0,1);
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 1);
   }
   :focus-visible {
     outline: 4px solid #000000;
     outline-offset: 3px;
     background-color: #fde047;
     color: #000000 !important;
-    box-shadow: 0 0 0 8px #fde047,  4px 4px 0px 8px #000000;
+    box-shadow: 0 0 0 8px #fde047,	 4px 4px 0px 8px #000000;
     border-radius: 2px;
     text-decoration: none;
   }
-  input:focus-visible, textarea:focus-visible, select:focus-visible {
+  input:focus-visible,	textarea:focus-visible,	select:focus-visible {
     outline: 4px solid #000000;
     outline-offset: 0px;
     background-color: #fef08a !important;
@@ -1822,7 +1868,7 @@ p, li, span:not(.uppercase) {
     outline-offset: 3px;
     background-color: #fde047 !important;
     color: #000000 !important;
-    box-shadow: 0 0 0 6px #fde047, 4px 4px 0px 6px #000000;
+    box-shadow: 0 0 0 6px #fde047,	4px 4px 0px 6px #000000;
   }
 }
 @property --tw-translate-x {

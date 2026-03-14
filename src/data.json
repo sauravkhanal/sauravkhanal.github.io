@@ -1,135 +1,155 @@
 {
-  "name": "Saurav Khanal",
-  "title": "Software Engineer",
-  "location": "Nepal",
-  "email": "hi@khanalsaurav.com.np",
-  "phone": "+977-9863263977",
-  "phoneUrl": "+9779863263977",
-  "github": "https://github.com/sauravkhanal",
-  "linkedin": "https://linkedin.com/in/khanalsaurav",
-  "experience": [
-    {
-      "period": "07/2024 – Present",
-      "role": "Software Engineer",
-      "company": "GritFeat Solutions",
-      "tags": ["React", "Node.js", "MongoDB", "TypeScript", "Docker"],
-      "color": "pink-300",
-      "dotColor": "yellow-300"
-    },
-    {
-      "period": "04/2024 – 07/2024",
-      "role": "Software Engineering Intern",
-      "company": "GritFeat Solutions",
-      "tags": ["React", "Express.js", "Tailwind CSS", "TypeScript"],
-      "color": "cyan-300",
-      "dotColor": "cyan-300"
-    }
-  ],
-  "projects": [
-    {
-      "title": "Doctor Booking Engine",
-      "lines": ["Doctor", "Booking", "Engine"],
-      "featured": "Featured Case",
-      "color": "lime-200",
-      "icon": "plus",
-      "highlights": [
-        "MERN healthcare portal with real-time availability sync.",
-        "Dual-persona dashboards (Doctor/Patient) with notification microservices.",
-        "JWT-based auth and secure session management."
-      ],
-      "tags": ["MERN", "JWT", "Auth"]
-    },
-    {
-      "title": "Agile Task Manager",
-      "lines": ["Agile", "Task", "Manager"],
-      "color": "cyan-200",
-      "icon": "check",
-      "highlights": [
-        "High-concurrency dashboard with low-latency drag-and-drop.",
-        "Task prioritization, sub-tasking, and dynamic team assignments.",
-        "Event-driven activity logger with real-time collaboration."
-      ],
-      "tags": ["MERN Stack", "Drag-n-Drop"]
-    },
-    {
-      "title": "Heritage AI Guide Mobile",
-      "lines": ["Heritage", "AI Guide", "Mobile"],
-      "color": "orange-200",
-      "icon": "map",
-      "highlights": [
-        "Heritage discovery app with real-time edge-inference CV.",
-        "Flask/FastAPI microservice serving YOLOv8 for site recognition.",
-        "Optimized image pipeline for low-latency on all networks."
-      ],
-      "tags": ["React Native", "YOLOv8", "FastAPI"]
-    },
-    {
-      "title": "Mock JSON API Hosting",
-      "lines": ["Mock JSON", "API", "Hosting"],
-      "color": "pink-300",
-      "icon": "server",
-      "description": "High-availability platform serving mock JSON endpoints, eliminating backend setup time with instant API mocking and .NET persistence.",
-      "tags": ["React.js", ".NET"]
-    }
-  ],
-  "skills": [
-    {
-      "category": "Frontend",
-      "color": "cyan-200",
-      "rotate": "rotate-1",
-      "items": [
-        { "name": "React.js", "bg": "cyan-100", "hover": "yellow-200" },
-        { "name": "TypeScript", "bg": "gray-100", "hover": "pink-200" },
-        { "name": "Tailwind CSS", "bg": "cyan-100", "hover": "yellow-200" },
-        { "name": "Zustand / Jotai", "bg": "purple-100", "hover": "pink-200" },
-        { "name": "Mantine UI", "bg": "gray-100", "hover": "yellow-200" },
-        { "name": "Vite", "bg": "orange-100", "hover": "yellow-200" }
-      ]
-    },
-    {
-      "category": "Backend",
-      "color": "rose-300",
-      "rotate": "-rotate-1",
-      "items": [
-        { "name": "Node.js / Express", "bg": "lime-100", "hover": "rose-200" },
-        { "name": "MongoDB / Mongoose", "bg": "lime-100", "hover": "rose-200" },
-        { "name": "REST APIs", "bg": "gray-100", "hover": "rose-200" },
-        { "name": "JWT / Auth", "bg": "gray-100", "hover": "rose-200" },
-        { "name": "Zod / Validation", "bg": "lime-100", "hover": "rose-200" }
-      ]
-    },
-    {
-      "category": "Tooling & DevOps",
-      "color": "purple-300",
-      "rotate": "rotate-1",
-      "items": [
-        { "name": "Git / GitHub", "bg": "gray-100", "hover": "purple-200" },
-        { "name": "Docker", "bg": "blue-100", "hover": "purple-200" },
-        {
-          "name": "Vercel / Railway",
-          "bg": "green-100",
-          "hover": "purple-200"
-        },
-        { "name": "Linux / PM2", "bg": "orange-100", "hover": "purple-200" },
-        { "name": "GitHub Actions", "bg": "gray-100", "hover": "purple-200" }
-      ]
-    }
-  ],
-  "education": [
-    {
-      "degree": "Bachelor's Degree in Computer Engineering",
-      "institution": "Kathmandu Engineering College",
-      "status": "Graduated 2024",
-      "color": "yellow-200",
-      "rotate": "rotate-1",
-      "isPrimary": true
-    },
-    {
-      "degree": "Professional Evolution",
-      "institution": "Continuous Growth",
-      "status": "Ongoing",
-      "color": "white",
-      "rotate": "-rotate-1"
-    }
-  ]
+	"name": "Saurav Khanal",
+	"title": "Software Engineer",
+	"location": "Nepal",
+	"email": "hi@khanalsaurav.com.np",
+	"phone": "+977-9863263977",
+	"phoneUrl": "+9779863263977",
+	"github": "https://github.com/sauravkhanal",
+	"linkedin": "https://linkedin.com/in/khanalsaurav",
+	"experience": [
+		{
+			"period": "07/2024 – Present",
+			"role": "Software Engineer",
+			"company": "GritFeat Solutions",
+			"tags": ["React.js", "Node.js", "MongoDB", "TypeScript", "Docker"],
+			"color": "pink-300",
+			"dotColor": "yellow-300"
+		},
+		{
+			"period": "04/2024 – 07/2024",
+			"role": "FullStack WEB development fellow",
+			"company": "GritFeat Solutions",
+			"tags": ["React.js", "Express.js", "Tailwind CSS", "TypeScript"],
+			"color": "cyan-300",
+			"dotColor": "cyan-300"
+		}
+	],
+	"projects": [
+		{
+			"title": "Doctor Appointment Booking",
+			"lines": ["Doctor", "Appointment", "Booking"],
+			"featured": "Featured Case",
+			"color": "lime-200",
+			"icon": "plus",
+			"highlights": [
+				"Enabled multi-user signup for doctors and patients.",
+				"Managed appointment scheduling and in app, email notifications.",
+				"MERN healthcare portal with real-time availability sync."
+			],
+			"tags": ["MERN", "JWT", "Auth"]
+		},
+		{
+			"title": "Task Manager",
+			"lines": ["Task", "Manager", "App"],
+			"color": "cyan-200",
+			"icon": "check",
+			"highlights": [
+				"Developed a full-stack web application for task management using MERN stack.",
+				"Implemented drag-and-drop functionality for tasks movement.",
+				"Implemented features like task prioritization, task assignment, comments, and activity logs."
+			],
+			"tags": ["MERN Stack", "Drag-n-Drop"]
+		},
+		{
+			"title": "Travel Guide Mobile Application",
+			"lines": ["Travel", "Guide", "Mobile App"],
+			"color": "orange-200",
+			"icon": "map",
+			"highlights": [
+				"Collaborated on developing a full-stack mobile application using React Native.",
+				"Led the development of the YOLOv8 model for image recognition of heritage sites and set up the backend with FastAPI.",
+				"Integrated the server-side image inference into the mobile application."
+			],
+			"tags": ["React Native", "YOLOv8", "FastAPI"]
+		}
+	],
+	"skills": [
+		{
+			"category": "Frontend",
+			"color": "cyan-200",
+			"rotate": "rotate-1",
+			"items": [
+				{ "name": "React.js", "bg": "cyan-100", "hover": "yellow-200" },
+				{ "name": "Next.js", "bg": "gray-100", "hover": "yellow-200" },
+				{
+					"name": "TypeScript",
+					"bg": "orange-100",
+					"hover": "pink-200"
+				},
+				{
+					"name": "Tailwind CSS",
+					"bg": "cyan-100",
+					"hover": "yellow-200"
+				},
+				{
+					"name": "HTML / CSS",
+					"bg": "purple-100",
+					"hover": "pink-200"
+				},
+				{
+					"name": "JavaScript",
+					"bg": "yellow-100",
+					"hover": "pink-200"
+				}
+			]
+		},
+		{
+			"category": "Backend",
+			"color": "rose-300",
+			"rotate": "-rotate-1",
+			"items": [
+				{ "name": "Node.js", "bg": "lime-100", "hover": "rose-200" },
+				{ "name": "Nest.js", "bg": "red-100", "hover": "rose-200" },
+				{ "name": "Express.js", "bg": "gray-100", "hover": "rose-200" },
+				{
+					"name": "NoSQL / MongoDB",
+					"bg": "green-100",
+					"hover": "rose-200"
+				},
+				{
+					"name": "SQL / PostgreSQL",
+					"bg": "blue-100",
+					"hover": "rose-200"
+				},
+				{ "name": "REST APIs", "bg": "purple-100", "hover": "rose-200" }
+			]
+		},
+		{
+			"category": "Tooling & DevOps",
+			"color": "purple-300",
+			"rotate": "rotate-1",
+			"items": [
+				{
+					"name": "Git / GitHub",
+					"bg": "gray-100",
+					"hover": "purple-200"
+				},
+				{ "name": "Docker", "bg": "blue-100", "hover": "purple-200" },
+				{ "name": "CI/CD", "bg": "green-100", "hover": "purple-200" },
+				{
+					"name": "GitHub Actions",
+					"bg": "gray-100",
+					"hover": "purple-200"
+				}
+			]
+		}
+	],
+	"education": [
+		{
+			"degree": "Bachelor's Degree in Computer Engineering",
+			"institution": "Kathmandu Engineering College",
+			"status": "Graduated 2024",
+			"color": "yellow-200",
+			"rotate": "rotate-1",
+			"isPrimary": true
+		},
+		{
+			"degree": "High school Diploma",
+			"institution": "Bagmati Modern College",
+			"status": "Graduated 2019",
+			"color": "white",
+			"rotate": "-rotate-1"
+		}
+	]
 }
