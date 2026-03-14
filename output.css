@@ -3,7 +3,7 @@
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {
-    --font-sans: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
     --color-red-100: oklch(93.6% 0.032 17.717);
@@ -1817,11 +1817,11 @@ body {
   overflow-x: hidden;
 }
 h1, h2, h3, h4, nav a, button, .font-black, .font-bold.uppercase, .neo-heading {
-  font-family: "Archivo Black", "Plus Jakarta Sans", "Arial Black", sans-serif !important;
+  font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
   letter-spacing: -0.02em;
 }
 p, li, span:not(.uppercase) {
-  font-family: "Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.6;
 }
 @layer utilities {

@@ -2,8 +2,7 @@
 
 @theme {
 	/* cleaner font stack omitting Segoe UI (Windows system UI font) */
-	--font-sans:
-		"Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -27,8 +26,7 @@ button,
 .font-black,
 .font-bold.uppercase,
 .neo-heading {
-	font-family:
-		"Archivo Black", "Plus Jakarta Sans", "Arial Black", sans-serif !important;
+	font-family: "Arial Black", "Arial Bold", Gadget, sans-serif !important;
 	letter-spacing: -0.02em;
 }
 
@@ -36,8 +34,7 @@ button,
 p,
 li,
 span:not(.uppercase) {
-	font-family:
-		"Plus Jakarta Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	line-height: 1.6;
 }
 
