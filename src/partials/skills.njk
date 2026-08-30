@@ -1,19 +1,19 @@
 <section id="technologies" class="space-y-6 sm:space-y-8 scroll-mt-24">
   <div class="border-b border-subtle pb-4">
-    <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
+    <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-600 dark:text-neutral-400">
       04 / Technologies
     </h2>
   </div>
 
   <div class="divide-y divide-neutral-200 dark:divide-neutral-800">
-    {% for group in technologies %}
+    {% for tech in technologies %}
     <div class="py-4 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
-      <div class="sm:w-44 shrink-0 font-mono text-xs uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
-        {{ group.category }}
+      <div class="sm:w-44 shrink-0 font-mono text-xs uppercase tracking-wider text-neutral-600 dark:text-neutral-400 font-medium">
+        {{ tech.category }}
       </div>
       <div class="font-mono text-xs sm:text-sm text-neutral-800 dark:text-neutral-200 leading-relaxed">
-        {% for item in group.items %}
-          <span class="inline-block hover:text-neutral-950 dark:hover:text-white transition-colors">{{ item }}</span>{% if not loop.last %} <span class="text-neutral-300 dark:text-neutral-700 select-none mx-1.5">·</span> {% endif %}
+        {% for item in tech.items %}
+          <span class="inline-block hover:text-neutral-950 dark:hover:text-white transition-colors">{{ item }}</span>{% if not loop.last %} <span class="text-neutral-400 dark:text-neutral-500 select-none mx-1.5">·</span> {% endif %}
         {% endfor %}
       </div>
     </div>

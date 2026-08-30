@@ -1,6 +1,6 @@
 <section id="experience" class="space-y-8 scroll-mt-24">
   <div class="border-b border-subtle pb-4">
-    <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
+    <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-600 dark:text-neutral-400">
       02 / Experience
     </h2>
   </div>
@@ -12,13 +12,13 @@
         
         <!-- Period & Company -->
         <div class="md:col-span-4 space-y-1">
-          <time class="font-mono text-xs text-neutral-500 dark:text-neutral-400 block">
+          <time class="font-mono text-xs text-neutral-600 dark:text-neutral-400 block font-medium">
             {{ job.period }}
           </time>
-          <div class="font-medium text-neutral-900 dark:text-neutral-100 text-sm sm:text-base">
+          <div class="font-medium text-neutral-950 dark:text-neutral-100 text-sm sm:text-base">
             {{ job.company }}
           </div>
-          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500">
+          <div class="font-mono text-xs text-neutral-600 dark:text-neutral-400">
             {{ job.location }}
           </div>
         </div>
@@ -28,12 +28,12 @@
           <h3 class="text-lg font-medium text-neutral-950 dark:text-neutral-50">
             {{ job.role }}
           </h3>
-          <p class="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          <p class="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed max-w-2xl">
             {{ job.description }}
           </p>
 
           {% if job.tags %}
-          <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-xs text-neutral-500 dark:text-neutral-400">
+          <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-xs text-neutral-600 dark:text-neutral-400">
             {% for tag in job.tags %}
             <span class="tech-tag">{{ tag }}</span>
             {% endfor %}

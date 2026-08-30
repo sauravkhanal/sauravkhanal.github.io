@@ -1,11 +1,11 @@
 <section id="work" class="space-y-8 scroll-mt-24">
   <div class="flex items-baseline justify-between border-b border-subtle pb-4">
     <div class="flex items-center gap-3">
-      <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
+      <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-600 dark:text-neutral-400">
         01 / Selected Work
       </h2>
     </div>
-    <a href="{{ github }}?tab=repositories" target="_blank" rel="noopener noreferrer" class="editorial-link font-mono text-xs text-neutral-500 dark:text-neutral-400 hover:text-neutral-900 dark:hover:text-neutral-100">
+    <a href="{{ github }}?tab=repositories" target="_blank" rel="noopener noreferrer" class="editorial-link font-mono text-xs text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-neutral-100">
       Archive & All Repositories <span aria-hidden="true">↗</span>
     </a>
   </div>
@@ -19,10 +19,10 @@
         
         <!-- Index & Meta Header -->
         <div class="md:col-span-3 flex md:flex-col justify-between items-baseline md:items-start gap-2">
-          <span class="font-mono text-sm font-semibold text-neutral-400 dark:text-neutral-600">
+          <span class="font-mono text-sm font-semibold text-neutral-600 dark:text-neutral-400">
             {{ project.id }}
           </span>
-          <span class="font-mono text-xs text-neutral-500 dark:text-neutral-400">
+          <span class="font-mono text-xs text-neutral-600 dark:text-neutral-400">
             {{ project.subtitle }}
           </span>
         </div>
@@ -39,7 +39,7 @@
                 href="{{ project.url }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="editorial-link text-neutral-900 dark:text-neutral-100 font-medium"
+                class="editorial-link text-neutral-950 dark:text-neutral-100 font-medium"
                 aria-label="Visit live website for {{ project.title }}"
               >
                 Live Site <span aria-hidden="true">↗</span>
@@ -50,7 +50,7 @@
                 href="{{ project.github }}"
                 target="_blank"
                 rel="noopener noreferrer"
-                class="editorial-link text-neutral-500 dark:text-neutral-400"
+                class="editorial-link text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-neutral-100"
                 aria-label="View source code for {{ project.title }} on GitHub"
               >
                 Source <span aria-hidden="true">↗</span>
@@ -59,12 +59,12 @@
             </div>
           </div>
 
-          <p class="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+          <p class="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed max-w-2xl">
             {{ project.description }}
           </p>
 
           <!-- Tech metadata -->
-          <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-xs text-neutral-500 dark:text-neutral-400">
+          <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-xs text-neutral-600 dark:text-neutral-400">
             {% for tag in project.tags %}
             <span class="tech-tag">{{ tag }}</span>
             {% endfor %}
@@ -79,10 +79,10 @@
 
   <!-- Expandable Additional Projects (Zero-JS Details Element) -->
   <details class="group/details border-t border-subtle pt-2">
-    <summary class="py-4 list-none cursor-pointer flex items-center justify-between font-mono text-xs text-neutral-500 hover:text-neutral-950 dark:hover:text-neutral-100 transition-colors select-none">
+    <summary class="py-4 list-none cursor-pointer flex items-center justify-between font-mono text-xs text-neutral-600 hover:text-neutral-950 dark:text-neutral-400 dark:hover:text-neutral-100 transition-colors select-none">
       <span class="flex items-center gap-2">
-        <span>View archive & additional projects</span>
-        <span class="text-neutral-400 dark:text-neutral-600">(Oasis Job, Heritage Vision)</span>
+        <span class="font-medium">View archive & additional projects</span>
+        <span class="text-neutral-500 dark:text-neutral-400">(Oasis Job, Heritage Vision)</span>
       </span>
       <span class="transform group-open/details:rotate-180 transition-transform duration-200" aria-hidden="true">↓</span>
     </summary>
@@ -95,10 +95,10 @@
           
           <!-- Index & Meta Header -->
           <div class="md:col-span-3 flex md:flex-col justify-between items-baseline md:items-start gap-2">
-            <span class="font-mono text-sm font-semibold text-neutral-400 dark:text-neutral-600">
+            <span class="font-mono text-sm font-semibold text-neutral-600 dark:text-neutral-400">
               {{ project.id }}
             </span>
-            <span class="font-mono text-xs text-neutral-500 dark:text-neutral-400">
+            <span class="font-mono text-xs text-neutral-600 dark:text-neutral-400">
               {{ project.subtitle }}
             </span>
           </div>
@@ -115,7 +115,7 @@
                   href="{{ project.url }}"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="editorial-link text-neutral-900 dark:text-neutral-100 font-medium"
+                  class="editorial-link text-neutral-950 dark:text-neutral-100 font-medium"
                   aria-label="Visit live website for {{ project.title }}"
                 >
                   Live Site <span aria-hidden="true">↗</span>
@@ -126,7 +126,7 @@
                   href="{{ project.github }}"
                   target="_blank"
                   rel="noopener noreferrer"
-                  class="editorial-link text-neutral-500 dark:text-neutral-400"
+                  class="editorial-link text-neutral-600 dark:text-neutral-400 hover:text-neutral-950 dark:hover:text-neutral-100"
                   aria-label="View source code for {{ project.title }} on GitHub"
                 >
                   Source <span aria-hidden="true">↗</span>
@@ -135,12 +135,12 @@
               </div>
             </div>
 
-            <p class="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+            <p class="text-sm sm:text-base text-neutral-700 dark:text-neutral-300 leading-relaxed max-w-2xl">
               {{ project.description }}
             </p>
 
             <!-- Tech metadata -->
-            <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-xs text-neutral-500 dark:text-neutral-400">
+            <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-xs text-neutral-600 dark:text-neutral-400">
               {% for tag in project.tags %}
               <span class="tech-tag">{{ tag }}</span>
               {% endfor %}

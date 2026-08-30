@@ -1,6 +1,6 @@
 <section id="about" class="space-y-8 scroll-mt-24">
   <div class="border-b border-subtle pb-4">
-    <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
+    <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-600 dark:text-neutral-400">
       03 / About & Background
     </h2>
   </div>
@@ -14,30 +14,30 @@
       <p>
         {{ about.current }}
       </p>
-      <p class="text-neutral-500 dark:text-neutral-400 font-mono text-xs pt-2">
+      <p class="text-neutral-600 dark:text-neutral-400 font-mono text-xs pt-2">
         {{ about.philosophy }}
       </p>
     </div>
 
     <!-- Education & Foundation -->
     <div class="md:col-span-5 space-y-6 md:border-l border-subtle md:pl-8">
-      <h3 class="font-mono text-xs uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+      <h3 class="font-mono text-xs uppercase tracking-wider text-neutral-600 dark:text-neutral-400">
         Education
       </h3>
       <div class="space-y-6">
         {% for edu in education %}
         <div class="space-y-1">
-          <div class="font-mono text-xs text-neutral-400 dark:text-neutral-500">
+          <div class="font-mono text-xs text-neutral-600 dark:text-neutral-400 font-medium">
             {{ edu.period }}
           </div>
-          <div class="font-medium text-neutral-900 dark:text-neutral-100 text-sm">
+          <div class="font-medium text-neutral-950 dark:text-neutral-100 text-sm">
             {{ edu.degree }}
           </div>
-          <div class="text-xs text-neutral-600 dark:text-neutral-400">
+          <div class="text-xs text-neutral-700 dark:text-neutral-300">
             {{ edu.institution }}
           </div>
           {% if edu.note %}
-          <div class="font-mono text-[11px] text-neutral-400 dark:text-neutral-500">
+          <div class="font-mono text-xs text-neutral-600 dark:text-neutral-400">
             {{ edu.note }}
           </div>
           {% endif %}

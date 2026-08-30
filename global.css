@@ -10,8 +10,8 @@
   --surface: #ffffff;
   --surface-subtle: #f2f1ec;
   --text: #111111;
-  --text-muted: #5c5c58;
-  --text-faint: #8e8e88;
+  --text-muted: #4a4a46;
+  --text-faint: #5c5c58;
   --border: #e2e1db;
   --border-strong: #111111;
   --accent: #111111;
@@ -25,8 +25,8 @@
     --surface: #141517;
     --surface-subtle: #1c1d20;
     --text: #ededeb;
-    --text-muted: #9c9c96;
-    --text-faint: #60605c;
+    --text-muted: #b5b5b0;
+    --text-faint: #9c9c96;
     --border: #26272b;
     --border-strong: #ededeb;
     --accent: #ffffff;
