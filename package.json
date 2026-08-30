@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build:html": "node build.js",
-    "build:css": "npx @tailwindcss/cli -i ./global.css -o ./output.css",
+    "build:css": "npx @tailwindcss/cli -i ./global.css -o ./output.css --minify",
     "watch:html": "node build.js --watch",
     "watch:css": "npx @tailwindcss/cli -i ./global.css -o ./output.css --watch",
     "dev": "concurrently \"npm run watch:html\" \"npm run watch:css\"",
