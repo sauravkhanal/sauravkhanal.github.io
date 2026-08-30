@@ -1,64 +1,22 @@
-<section id="skills" class="pt-10 scroll-mt-24 min-h-[calc(100vh-120px)] flex flex-col justify-center">
-  <div class="grid grid-cols-1 lg:grid-cols-2 gap-20">
+<section id="technologies" class="space-y-6 sm:space-y-8 scroll-mt-24">
+  <div class="border-b border-subtle pb-4">
+    <h2 class="font-mono text-xs uppercase tracking-widest text-neutral-500 dark:text-neutral-400">
+      04 / Technologies
+    </h2>
+  </div>
 
-    {# ---- Skills ---- #}
-    <div>
-      <h2 class="text-4xl md:text-6xl font-black uppercase mb-12 flex items-center gap-4">
-        <div class="bg-yellow-300 p-4 neo-border rounded-full flex items-center justify-center shadow-lg">
-          <svg class="w-10 h-10 md:w-12 md:h-12 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M13 10V3L4 14h7v7l9-11h-7z"/>
-          </svg>
-        </div>
-        <span>Stack</span>
-      </h2>
-
-      <div class="bg-white p-8 md:p-12 neo-border neo-shadow-lg space-y-10">
-        {% for group in skills %}
-        <div>
-          <h3 class="text-xl font-black uppercase mb-6 bg-{{ group.color }} inline-block px-4 py-1 neo-border shadow-[3px_3px_0_0_rgba(0,0,0,1)] {{ group.rotate }}">
-            {{ group.category }}
-          </h3>
-          <div class="flex flex-wrap gap-4 mt-2 font-black uppercase text-sm">
-            {% for skill in group.items %}
-            <span class="px-4 py-2 bg-{{ skill.bg }} neo-border hover:bg-{{ skill.hover }} transition-colors cursor-default">
-              {{ skill.name }}
-            </span>
-            {% endfor %}
-          </div>
-        </div>
+  <div class="divide-y divide-neutral-200 dark:divide-neutral-800">
+    {% for group in technologies %}
+    <div class="py-4 first:pt-0 last:pb-0 flex flex-col sm:flex-row sm:items-baseline gap-2 sm:gap-8">
+      <div class="sm:w-44 shrink-0 font-mono text-xs uppercase tracking-wider text-neutral-500 dark:text-neutral-400">
+        {{ group.category }}
+      </div>
+      <div class="font-mono text-xs sm:text-sm text-neutral-800 dark:text-neutral-200 leading-relaxed">
+        {% for item in group.items %}
+          <span class="inline-block hover:text-neutral-950 dark:hover:text-white transition-colors">{{ item }}</span>{% if not loop.last %} <span class="text-neutral-300 dark:text-neutral-700 select-none mx-1.5">·</span> {% endif %}
         {% endfor %}
       </div>
     </div>
-
-    {# ---- Education ---- #}
-    <div>
-      <h2 class="text-4xl md:text-6xl font-black uppercase mb-12 flex items-center gap-4">
-        <div class="bg-lime-300 p-4 neo-border rounded-full flex items-center justify-center shadow-lg">
-          <svg class="w-10 h-10 md:w-12 md:h-12 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2.5">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"/>
-          </svg>
-        </div>
-        <span>Engineering Pedigree</span>
-      </h2>
-
-      <div class="space-y-12">
-        {% for edu in education %}
-        <div class="bg-{{ edu.color }} p-10 neo-border neo-shadow-lg neo-hover relative {{ edu.rotate }} hover:rotate-0">
-          <h3 class="text-2xl md:text-3xl font-black uppercase tracking-tight">
-            {{ edu.degree | safe }}
-          </h3>
-          <p class="text-xl font-bold mt-6 {{ 'bg-white' if edu.isPrimary else 'bg-gray-200' }} inline-block px-3 neo-border">
-            {{ edu.institution }}
-          </p>
-          <div class="mt-8 flex items-center">
-            <p class="font-black text-sm bg-black text-white px-4 py-2 neo-border uppercase tracking-widest">
-              {{ edu.status }}
-            </p>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-
+    {% endfor %}
   </div>
 </section>

@@ -1,153 +1,115 @@
 {
 	"name": "Saurav Khanal",
+	"shortName": "S. Khanal",
 	"title": "Software Engineer",
-	"location": "Nepal",
+	"bio": "Software engineer building reliable, high-performance systems for the web. Focused on JavaScript, TypeScript, React, Node.js, and database systems.",
+	"location": "Kathmandu, Nepal",
+	"status": "Available for select opportunities",
 	"email": "hi@khanalsaurav.com.np",
 	"github": "https://github.com/sauravkhanal",
 	"linkedin": "https://linkedin.com/in/khanalsaurav",
+	"siteUrl": "https://khanalsaurav.com.np",
+	"about": {
+		"summary": "I'm a computer engineer based in Nepal. I focus on building software end-to-end — from intuitive, accessible frontend interfaces to robust backend APIs and cloud database architectures.",
+		"philosophy": "I value simplicity in architecture, performance as a core feature, and software that remains maintainable over time.",
+		"current": "Currently engineering production systems at GritFeat Solutions, working across full-stack applications with JavaScript, TypeScript, React, Node.js, and Azure."
+	},
 	"experience": [
 		{
-			"period": "07/2024 – Present",
+			"period": "2024 — Present",
 			"role": "Software Engineer",
 			"company": "GritFeat Solutions",
-			"tags": ["React.js", "Node.js", "MongoDB", "TypeScript", "Docker"],
-			"color": "pink-300",
-			"dotColor": "yellow-300"
+			"location": "Kathmandu, Nepal",
+			"description": "Building full-stack web applications and backend services. Developing robust APIs with JavaScript, TypeScript, and Node.js, managing MongoDB and SQL database systems, and integrating cloud services on Azure.",
+			"tags": ["Full Stack JS", "SQL / NoSQL", "Azure"]
 		},
 		{
-			"period": "04/2024 – 07/2024",
-			"role": "FullStack WEB development fellow",
+			"period": "2024",
+			"role": "FullStack Web Development Fellow",
 			"company": "GritFeat Solutions",
-			"tags": ["React.js", "Express.js", "Tailwind CSS", "TypeScript"],
-			"color": "cyan-300",
-			"dotColor": "cyan-300"
+			"location": "Kathmandu, Nepal",
+			"description": "Completed intensive engineering fellowship developing responsive web applications, component libraries, and API integrations with React, Express, and TypeScript.",
+			"tags": ["React", "Express", "Tailwind CSS", "TypeScript"]
 		}
 	],
 	"projects": [
 		{
-			"title": "Doctor Appointment Booking",
-			"lines": ["Doctor", "Appointment", "Booking"],
-			"featured": "Featured Case",
-			"color": "lime-200",
-			"icon": "plus",
-			"highlights": [
-				"Enabled multi-user signup for doctors and patients.",
-				"Managed appointment scheduling and in app, email notifications.",
-				"MERN healthcare portal with real-time availability sync."
-			],
-			"tags": ["MERN", "JWT", "Auth"]
+			"id": "01",
+			"title": "Travel Guide & Heritage Vision",
+			"subtitle": "Computer Vision & Mobile Guide",
+			"description": "Full-stack mobile application that identifies Nepalese cultural heritage sites in real time using computer vision. Led the custom YOLOv8 model training and deployed a high-throughput FastAPI inference server integrated into the React Native client.",
+			"tags": ["React Native", "YOLOv8", "FastAPI", "Python"],
+			"github": "https://github.com/sauravkhanal",
+			"featured": true
 		},
 		{
-			"title": "Task Manager",
-			"lines": ["Task", "Manager", "App"],
-			"color": "cyan-200",
-			"icon": "check",
-			"highlights": [
-				"Developed a full-stack web application for task management using MERN stack.",
-				"Implemented drag-and-drop functionality for tasks movement.",
-				"Implemented features like task prioritization, task assignment, comments, and activity logs."
-			],
-			"tags": ["MERN Stack", "Drag-n-Drop"]
+			"id": "02",
+			"title": "Clinical Appointment Platform",
+			"subtitle": "Healthcare Scheduling & Notifications",
+			"description": "Comprehensive healthcare portal supporting multi-role authentication (doctors and patients), real-time schedule management, dynamic slot allocation, and automated email/in-app notifications.",
+			"tags": ["React", "Node.js", "Express", "MongoDB"],
+			"github": "https://github.com/sauravkhanal",
+			"featured": true
 		},
 		{
-			"title": "Travel Guide Mobile Application",
-			"lines": ["Travel", "Guide", "Mobile App"],
-			"color": "orange-200",
-			"icon": "map",
-			"highlights": [
-				"Collaborated on developing a full-stack mobile application using React Native.",
-				"Led the development of the YOLOv8 model for image recognition of heritage sites and set up the backend with FastAPI.",
-				"Integrated the server-side image inference into the mobile application."
-			],
-			"tags": ["React Native", "YOLOv8", "FastAPI"]
+			"id": "03",
+			"title": "Collaborative Task Manager",
+			"subtitle": "Productivity & Workflow Engine",
+			"description": "Kanban-style task management workspace with fluid drag-and-drop task prioritization, role-based project assignment, real-time activity auditing, and customizable team boards.",
+			"tags": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
+			"github": "https://github.com/sauravkhanal",
+			"featured": false
 		}
 	],
-	"skills": [
+	"technologies": [
 		{
 			"category": "Frontend",
-			"color": "cyan-200",
-			"rotate": "rotate-1",
 			"items": [
-				{ "name": "React.js", "bg": "cyan-100", "hover": "yellow-200" },
-				{ "name": "Next.js", "bg": "gray-100", "hover": "yellow-200" },
-				{
-					"name": "TypeScript",
-					"bg": "orange-100",
-					"hover": "pink-200"
-				},
-				{
-					"name": "Tailwind CSS",
-					"bg": "cyan-100",
-					"hover": "yellow-200"
-				},
-				{
-					"name": "HTML / CSS",
-					"bg": "purple-100",
-					"hover": "pink-200"
-				},
-				{
-					"name": "JavaScript",
-					"bg": "yellow-100",
-					"hover": "pink-200"
-				}
+				"TypeScript",
+				"JavaScript",
+				"React",
+				"Next.js",
+				"React Native"
 			]
 		},
 		{
-			"category": "Backend",
-			"color": "rose-300",
-			"rotate": "-rotate-1",
+			"category": "Backend & Data",
 			"items": [
-				{ "name": "Node.js", "bg": "lime-100", "hover": "rose-200" },
-				{ "name": "Nest.js", "bg": "red-100", "hover": "rose-200" },
-				{ "name": "Express.js", "bg": "gray-100", "hover": "rose-200" },
-				{
-					"name": "NoSQL / MongoDB",
-					"bg": "green-100",
-					"hover": "rose-200"
-				},
-				{
-					"name": "SQL / PostgreSQL",
-					"bg": "blue-100",
-					"hover": "rose-200"
-				},
-				{ "name": "REST APIs", "bg": "purple-100", "hover": "rose-200" }
+				"Node.js",
+				"NestJS",
+				"Express",
+				"FastAPI",
+				"Python",
+				"MongoDB",
+				"PostgreSQL",
+				"SQL"
 			]
 		},
 		{
-			"category": "Tooling & DevOps",
-			"color": "purple-300",
-			"rotate": "rotate-1",
+			"category": "Infrastructure",
 			"items": [
-				{
-					"name": "Git / GitHub",
-					"bg": "gray-100",
-					"hover": "purple-200"
-				},
-				{ "name": "Docker", "bg": "blue-100", "hover": "purple-200" },
-				{ "name": "CI/CD", "bg": "green-100", "hover": "purple-200" },
-				{
-					"name": "GitHub Actions",
-					"bg": "gray-100",
-					"hover": "purple-200"
-				}
+				"Azure",
+				"Docker",
+				"Linux",
+				"Nginx",
+				"GitHub Actions",
+				"Oracle Cloud",
+				"Vercel"
 			]
 		}
 	],
 	"education": [
 		{
-			"degree": "Bachelor's Degree in Computer Engineering",
+			"degree": "B.E. in Computer Engineering",
 			"institution": "Kathmandu Engineering College",
-			"status": "Graduated 2024",
-			"color": "yellow-200",
-			"rotate": "rotate-1",
-			"isPrimary": true
+			"period": "2020 — 2024",
+			"note": "Affiliated with Tribhuvan University"
 		},
 		{
-			"degree": "High school Diploma",
+			"degree": "High School Diploma (+2 Science)",
 			"institution": "Bagmati Modern College",
-			"status": "Graduated 2019",
-			"color": "white",
-			"rotate": "-rotate-1"
+			"period": "2017 — 2019",
+			"note": "Major in Physics & Mathematics"
 		}
 	]
 }
