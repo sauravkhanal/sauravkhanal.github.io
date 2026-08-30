@@ -10,8 +10,10 @@
     </a>
   </div>
 
+  <!-- Featured Projects List -->
   <div class="divide-y divide-neutral-200 dark:divide-neutral-800">
     {% for project in projects %}
+    {% if project.featured %}
     <article class="py-8 sm:py-10 first:pt-2 last:pb-2 group transition-colors">
       <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
         
@@ -31,17 +33,30 @@
             <h3 class="text-xl sm:text-2xl font-medium tracking-tight text-neutral-950 dark:text-neutral-50">
               {{ project.title }}
             </h3>
-            {% if project.github %}
-            <a
-              href="{{ project.github }}"
-              target="_blank"
-              rel="noopener noreferrer"
-              class="editorial-link font-mono text-xs text-neutral-700 dark:text-neutral-300 shrink-0 self-start sm:self-auto"
-              aria-label="View source code for {{ project.title }} on GitHub"
-            >
-              Source Code <span aria-hidden="true">↗</span>
-            </a>
-            {% endif %}
+            <div class="flex items-center gap-3 shrink-0 self-start sm:self-auto font-mono text-xs">
+              {% if project.url %}
+              <a
+                href="{{ project.url }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="editorial-link text-neutral-900 dark:text-neutral-100 font-medium"
+                aria-label="Visit live website for {{ project.title }}"
+              >
+                Live Site <span aria-hidden="true">↗</span>
+              </a>
+              {% endif %}
+              {% if project.github %}
+              <a
+                href="{{ project.github }}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="editorial-link text-neutral-500 dark:text-neutral-400"
+                aria-label="View source code for {{ project.title }} on GitHub"
+              >
+                Source <span aria-hidden="true">↗</span>
+              </a>
+              {% endif %}
+            </div>
           </div>
 
           <p class="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
@@ -58,6 +73,84 @@
 
       </div>
     </article>
+    {% endif %}
     {% endfor %}
   </div>
+
+  <!-- Expandable Additional Projects (Zero-JS Details Element) -->
+  <details class="group/details border-t border-subtle pt-2">
+    <summary class="py-4 list-none cursor-pointer flex items-center justify-between font-mono text-xs text-neutral-500 hover:text-neutral-950 dark:hover:text-neutral-100 transition-colors select-none">
+      <span class="flex items-center gap-2">
+        <span>View archive & additional projects</span>
+        <span class="text-neutral-400 dark:text-neutral-600">(Oasis Job, Heritage Vision)</span>
+      </span>
+      <span class="transform group-open/details:rotate-180 transition-transform duration-200" aria-hidden="true">↓</span>
+    </summary>
+
+    <div class="divide-y divide-neutral-200 dark:divide-neutral-800 pt-2 pb-4">
+      {% for project in projects %}
+      {% if not project.featured %}
+      <article class="py-8 sm:py-10 first:pt-4 last:pb-2 group transition-colors">
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-4 md:gap-8 items-start">
+          
+          <!-- Index & Meta Header -->
+          <div class="md:col-span-3 flex md:flex-col justify-between items-baseline md:items-start gap-2">
+            <span class="font-mono text-sm font-semibold text-neutral-400 dark:text-neutral-600">
+              {{ project.id }}
+            </span>
+            <span class="font-mono text-xs text-neutral-500 dark:text-neutral-400">
+              {{ project.subtitle }}
+            </span>
+          </div>
+
+          <!-- Project Content -->
+          <div class="md:col-span-9 space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-baseline justify-between gap-2">
+              <h3 class="text-xl sm:text-2xl font-medium tracking-tight text-neutral-950 dark:text-neutral-50">
+                {{ project.title }}
+              </h3>
+              <div class="flex items-center gap-3 shrink-0 self-start sm:self-auto font-mono text-xs">
+                {% if project.url %}
+                <a
+                  href="{{ project.url }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="editorial-link text-neutral-900 dark:text-neutral-100 font-medium"
+                  aria-label="Visit live website for {{ project.title }}"
+                >
+                  Live Site <span aria-hidden="true">↗</span>
+                </a>
+                {% endif %}
+                {% if project.github %}
+                <a
+                  href="{{ project.github }}"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="editorial-link text-neutral-500 dark:text-neutral-400"
+                  aria-label="View source code for {{ project.title }} on GitHub"
+                >
+                  Source <span aria-hidden="true">↗</span>
+                </a>
+                {% endif %}
+              </div>
+            </div>
+
+            <p class="text-sm sm:text-base text-neutral-600 dark:text-neutral-400 leading-relaxed max-w-2xl">
+              {{ project.description }}
+            </p>
+
+            <!-- Tech metadata -->
+            <div class="pt-2 flex flex-wrap gap-1.5 font-mono text-xs text-neutral-500 dark:text-neutral-400">
+              {% for tag in project.tags %}
+              <span class="tech-tag">{{ tag }}</span>
+              {% endfor %}
+            </div>
+          </div>
+
+        </div>
+      </article>
+      {% endif %}
+      {% endfor %}
+    </div>
+  </details>
 </section>

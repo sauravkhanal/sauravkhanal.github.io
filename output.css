@@ -330,6 +330,9 @@
   .shrink-0 {
     flex-shrink: 0;
   }
+  .transform {
+    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
+  }
   .animate-ping {
     animation: var(--animate-ping);
   }
@@ -341,6 +344,9 @@
   }
   .scroll-mt-24 {
     scroll-margin-top: calc(var(--spacing) * 24);
+  }
+  .list-none {
+    list-style-type: none;
   }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
@@ -745,6 +751,15 @@
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
     transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
+  .transition-transform {
+    transition-property: transform, translate, scale, rotate;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+  }
+  .duration-200 {
+    --tw-duration: 200ms;
+    transition-duration: 200ms;
+  }
   .outline-none {
     --tw-outline-style: none;
     outline-style: none;
@@ -752,6 +767,11 @@
   .select-none {
     -webkit-user-select: none;
     user-select: none;
+  }
+  .group-open\/details\:rotate-180 {
+    &:is(:where(.group\/details):is([open], :popover-open, :open) *) {
+      rotate: 180deg;
+    }
   }
   .selection\:bg-neutral-800 {
     & *::selection {
@@ -777,6 +797,11 @@
   .first\:pt-2 {
     &:first-child {
       padding-top: calc(var(--spacing) * 2);
+    }
+  }
+  .first\:pt-4 {
+    &:first-child {
+      padding-top: calc(var(--spacing) * 4);
     }
   }
   .last\:pb-0 {
@@ -1351,6 +1376,26 @@ body {
     scroll-behavior: auto !important;
   }
 }
+@property --tw-rotate-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-y {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-rotate-z {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-x {
+  syntax: "*";
+  inherits: false;
+}
+@property --tw-skew-y {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
@@ -1479,6 +1524,10 @@ body {
   syntax: "*";
   inherits: false;
 }
+@property --tw-duration {
+  syntax: "*";
+  inherits: false;
+}
 @property --tw-translate-x {
   syntax: "*";
   inherits: false;
@@ -1503,6 +1552,11 @@ body {
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
+      --tw-rotate-x: initial;
+      --tw-rotate-y: initial;
+      --tw-rotate-z: initial;
+      --tw-skew-x: initial;
+      --tw-skew-y: initial;
       --tw-space-y-reverse: 0;
       --tw-divide-y-reverse: 0;
       --tw-border-style: solid;
@@ -1532,6 +1586,7 @@ body {
       --tw-backdrop-opacity: initial;
       --tw-backdrop-saturate: initial;
       --tw-backdrop-sepia: initial;
+      --tw-duration: initial;
       --tw-translate-x: 0;
       --tw-translate-y: 0;
       --tw-translate-z: 0;

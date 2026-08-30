@@ -10,9 +10,9 @@
 	"linkedin": "https://linkedin.com/in/khanalsaurav",
 	"siteUrl": "https://khanalsaurav.com.np",
 	"about": {
-		"summary": "I'm a computer engineer based in Nepal. I focus on building software end-to-end — from intuitive, accessible frontend interfaces to robust backend APIs and cloud database architectures.",
-		"philosophy": "I value simplicity in architecture, performance as a core feature, and software that remains maintainable over time.",
-		"current": "Currently engineering production systems at GritFeat Solutions, working across full-stack applications with JavaScript, TypeScript, React, Node.js, and Azure."
+		"summary": "I am a computer engineer based in Nepal building full-stack and data-intensive applications. I focus on developing reliable software end-to-end, from responsive user interfaces to robust backend APIs and efficient database systems.",
+		"philosophy": "I value clean architecture, performance as a core requirement, and software that remains maintainable over time.",
+		"current": "Currently engineering production systems at GritFeat Solutions, building full-stack and data-driven applications with TypeScript, React, Node.js, and Azure."
 	},
 	"experience": [
 		{
@@ -22,6 +22,14 @@
 			"location": "Kathmandu, Nepal",
 			"description": "Building full-stack web applications and backend services. Developing robust APIs with JavaScript, TypeScript, and Node.js, managing MongoDB and SQL database systems, and integrating cloud services on Azure.",
 			"tags": ["Full Stack JS", "SQL / NoSQL", "Azure"]
+		},
+		{
+			"period": "2025 — Present",
+			"role": "IT & Digital Coordinator",
+			"company": "Youth Foundation Nepal (Volunteer)",
+			"location": "Lalitpur, Nepal",
+			"description": "Leading digital infrastructure and web platforms for the non-profit. Managing email systems, DNS records, website deployments, and digital resources supporting educational initiatives across rural Nepal.",
+			"tags": ["Next.js", "DNS & Email Infra", "Digital Ops"]
 		},
 		{
 			"period": "2024",
@@ -35,29 +43,59 @@
 	"projects": [
 		{
 			"id": "01",
-			"title": "Travel Guide & Heritage Vision",
-			"subtitle": "Computer Vision & Mobile Guide",
-			"description": "Full-stack mobile application that identifies Nepalese cultural heritage sites in real time using computer vision. Led the custom YOLOv8 model training and deployed a high-throughput FastAPI inference server integrated into the React Native client.",
-			"tags": ["React Native", "YOLOv8", "FastAPI", "Python"],
-			"github": "https://github.com/sauravkhanal",
+			"title": "Youth Foundation Nepal",
+			"subtitle": "NGO Platform & Admin Dashboard",
+			"description": "Production web platform for an educational non-profit in Nepal. Engineered custom administrative portals to manage volunteer rosters, rural school projects, notices, and dynamic resources, while managing organization email infrastructure and digital assets.",
+			"tags": [
+				"Next.js",
+				"React",
+				"TypeScript",
+				"Tailwind CSS",
+				"Admin Portal"
+			],
+			"url": "https://youthfoundationnepal.org.np",
 			"featured": true
 		},
 		{
 			"id": "02",
-			"title": "Clinical Appointment Platform",
-			"subtitle": "Healthcare Scheduling & Notifications",
-			"description": "Comprehensive healthcare portal supporting multi-role authentication (doctors and patients), real-time schedule management, dynamic slot allocation, and automated email/in-app notifications.",
-			"tags": ["React", "Node.js", "Express", "MongoDB"],
-			"github": "https://github.com/sauravkhanal",
+			"title": "Suva Jyotish App Backend",
+			"subtitle": "Consultation Engine & App APIs",
+			"description": "Backend system and API architecture powering the Suva Jyotish mobile application on Android and iOS. Engineered scalable NestJS REST endpoints, integrated eSewa payment gateway for consultations, and configured production deployment on Railway.",
+			"tags": ["NestJS", "MongoDB", "eSewa", "Railway", "REST APIs"],
+			"url": "https://suvajyotish.com",
 			"featured": true
 		},
 		{
 			"id": "03",
-			"title": "Collaborative Task Manager",
-			"subtitle": "Productivity & Workflow Engine",
-			"description": "Kanban-style task management workspace with fluid drag-and-drop task prioritization, role-based project assignment, real-time activity auditing, and customizable team boards.",
-			"tags": ["React", "Node.js", "MongoDB", "Tailwind CSS"],
-			"github": "https://github.com/sauravkhanal",
+			"title": "Sherpa Kiwi Farm",
+			"subtitle": "Commercial Agricultural Platform",
+			"description": "Modern commercial website and media gallery for a Himalayan kiwi orchard. Built a bespoke administrative dashboard allowing farm managers to publish seasonal updates, manage image galleries, and track harvest milestones.",
+			"tags": ["Next.js", "TypeScript", "Tailwind CSS", "Admin Panel"],
+			"url": "https://sherpakiwi.com",
+			"featured": true
+		},
+		{
+			"id": "04",
+			"title": "Oasis Job Placement & Consultancy",
+			"subtitle": "Overseas Recruitment Portal",
+			"description": "Streamlined overseas employment and recruitment consultancy website connecting Nepali candidates with verified international employers, featuring responsive service documentation and inquiry routing.",
+			"tags": ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+			"url": "https://oasisjob.com.np",
+			"featured": false
+		},
+		{
+			"id": "05",
+			"title": "Heritage Vision & Travel Guide",
+			"subtitle": "Computer Vision & Mobile App",
+			"description": "Collaborated on full-stack mobile application that identifies Nepalese cultural heritage monuments in real time from camera input. Trained a custom YOLOv8 object detection model and deployed a FastAPI inference backend serving the React Native client.",
+			"tags": [
+				"React Native",
+				"YOLOv8",
+				"FastAPI",
+				"Python",
+				"Computer Vision"
+			],
+			"github": "https://github.com/Suprim-Shakya/TravelApp",
 			"featured": false
 		}
 	],
@@ -81,7 +119,6 @@
 				"FastAPI",
 				"Python",
 				"MongoDB",
-				"PostgreSQL",
 				"SQL"
 			]
 		},
